@@ -9,14 +9,18 @@
     The Open Library Search API is used to retrieve book data based on user input such as title or ISBN. It returns relevant book information including title, author, publication year, and cover image. This API serves as the external data source for populating the system’s inventory.
 
 **4. Setup Instructions**
-Installation: No installation or dependencies are required.
+    Installation: No installation or dependencies are required.
     Run Locally: 
+   
     - Download or clone the project folder
+   
     - Ensure the following files are in the same directory:
         index.html
         style.css
         script.js
+   
     - Open index.html in any web browser
+    
     The application runs entirely on the user side using local storage.
 
 **5. Data Integration Explanation**
@@ -28,12 +32,18 @@ Installation: No installation or dependencies are required.
     The dashboard dynamically displays counts of total books, available books, borrowed books, and overdue books. Users can also filter the inventory by these categories, allowing for easier management and monitoring.
 
 **6. Known Limitations**    
+    
     - Data is stored only in browser local storage and is not shared across devices
+    
     - No real user authentication or borrower validation
+    
     - Manual return process (books must be marked available manually)
 
 **7. AI Usage Disclosure**    
     AI tools were used throughout the development of this project as a collaborative aid. Specifically, AI was used for:
+       
         - Debugging and improving code logic
+        
         - Enhancing UI/UX decisions and workflow design
+        
     All core functionality, system logic, and integration flow were implemented and understood by the developer. The final application reflects a collaborative effort where AI supported development, but the overall system design and customization were actively carried out by the developer.
