@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookReads | Digital Library Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>BookReads</h1>
+      <p>Digital Library Book Tracker</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Your Library Dashboard</h2>
+      <p>
+        Search for books, add them to your collection, and keep track of what’s available, borrowed, or overdue.
+      </p>
+    </section>
+
+    <!-- DASHBOARD FILTERS -->
+    <section class="dashboard">
+      <div class="dash-card active-filter" data-filter="All" onclick="filterInventory('All')">
+        <h3 id="totalBooks">0</h3>
+        <p>Total Books</p>
+      </div>
+
+      <div class="dash-card available" data-filter="Available" onclick="filterInventory('Available')">
+        <h3 id="availableBooks">0</h3>
+        <p>Available</p>
+      </div>
+
+      <div class="dash-card borrowed" data-filter="Borrowed" onclick="filterInventory('Borrowed')">
+        <h3 id="borrowedBooks">0</h3>
+        <p>Borrowed</p>
+      </div>
+
+      <div class="dash-card overdue" data-filter="Overdue" onclick="filterInventory('Overdue')">
+        <h3 id="overdueBooks">0</h3>
+        <p>Overdue</p>
+      </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="search-section">
+      <h2>Search Book</h2>
+
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Enter book title or ISBN..."
+        />
+        <button onclick="searchBooks()">Search</button>
+      </div>
+
+      <p class="note">Example: The Hunger Games, Harry Potter, 9780439023528</p>
+
+      <div id="message"></div>
+      <div id="searchResults" class="book-grid"></div>
+    </section>
+
+    <!-- INVENTORY -->
+    <section class="inventory-section">
+      <div class="section-header">
+        <h2>Library Inventory</h2>
+        <button class="clear-btn" onclick="clearInventory()">Clear Inventory</button>
+      </div>
+
+      <div id="inventoryList" class="book-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <div id="toastContainer"></div>
+</body>
+</html>
