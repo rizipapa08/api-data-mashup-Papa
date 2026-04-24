@@ -4,6 +4,7 @@
     Made for book collectors and/or librarians, BookReads is a local web application that simulates how a digital library staff member or personal user manages a book inventory. It demonstrates how systems connect through APIs, retrieve external data, and store and update records locally. The application allows users to search for books using an external API, select and add them to a local library inventory, and manage their circulation status. Once added, books can be marked as Available or Borrowed, with automatic tracking of borrower details and due dates. If a book is not returned within the standard 7-day loan period, it is automatically marked as Overdue.
 
 **2. Track: COMTECH (Communications Technology)**
+
 **3. APIs Used**
     Open Library Search API: https://openlibrary.org/dev/docs/api/search and https://openlibrary.org/search.json
     The Open Library Search API is used to retrieve book data based on user input such as title or ISBN. It returns relevant book information including title, author, publication year, and cover image. This API serves as the external data source for populating the system’s inventory.
