@@ -26,10 +26,12 @@ Installation: No installation or dependencies are required.
     Each book in the inventory has a status that reflects its availability. By default, books are marked as Available. When a book is borrowed, the user inputs the borrower’s name, and the system automatically assigns a standard loan period of 7 days. The due date is calculated and stored along with the record.
     The system continuously checks the current date against stored due dates. If a borrowed book exceeds its due date, its status is automatically updated to Overdue. This logic simulates real-time tracking without requiring a backend system.
     The dashboard dynamically displays counts of total books, available books, borrowed books, and overdue books. Users can also filter the inventory by these categories, allowing for easier management and monitoring.
+
 **6. Known Limitations**    
     - Data is stored only in browser local storage and is not shared across devices
     - No real user authentication or borrower validation
     - Manual return process (books must be marked available manually)
+
 **7. AI Usage Disclosure**    
     AI tools were used throughout the development of this project as a collaborative aid. Specifically, AI was used for:
         - Debugging and improving code logic
